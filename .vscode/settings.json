@@ -1,0 +1,5 @@
+{
+  "python.formatting.provider": "autopep8",
+  "python.linting.enabled": false,
+  "python.pythonPath": "C:\\Users\\Julio Alfian\\AppData\\Local\\Programs\\Python\\Python36\\python.exe"
+}
