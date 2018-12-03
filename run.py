@@ -27,15 +27,17 @@ def catalog(browser):
             "//button[@class='ui green fluid button']")
         if(card is None):
             continue
-        card.click()
-    print("lanjut ke more")
+        else:
+            card.click()
+        continue
     buttonMore = browser.find_element_by_xpath("//button[@pagination]").click()
 
 
 browser = webdriver.Chrome("D:/mlabs/automation/chromedriver.exe")
 web(browser)
 login(browser)
-time.sleep(20)
-catalog(browser)
-time.sleep(50)
+time.sleep(30)
+for x in range(3):
+    catalog(browser)
+    time.sleep(60)
 browser.quit()
